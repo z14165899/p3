@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/','FormController@index');
+Route::get('/check-answer', 'FormController@checkAnswer'); 
+Route::get('/env', function () {
+    dump(config('app.name'));
+    dump(config('app.env'));
+    dump(config('app.debug'));
+    dump(config('app.url'));
 });
