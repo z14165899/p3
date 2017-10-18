@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class FormController extends Controller
 {
     public function index(){
-        return 'Show form to collect information from user...';
+        return view('p3form.index');
     }
     
     public function checkAnswer(){
