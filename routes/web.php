@@ -12,7 +12,7 @@
 */
 
 Route::get('/','FormController@index');
-Route::get('/check-answer', 'FormController@checkAnswer'); 
+Route::get('/answer', 'FormController@answer'); 
 Route::get('/env', function () {
     dump(config('app.name'));
     dump(config('app.env'));
