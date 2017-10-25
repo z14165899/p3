@@ -6,7 +6,7 @@
 <form method='GET' action='/answer'>
     <fieldset class='text'>
         <label for='firstTerm'>Enter Your First Term:
-            <input type='text' name='firstTerm' id='firstTerm' value='{{ $firstTerm or '' }}'>
+            <input type='text' name='firstTerm' id='firstTerm' value='{{ old('firstTerm') }}'>
             </label> @if(count($errors) > 0)
         <ul>
             @foreach ($errors->get('firstTerm') as $error)
@@ -18,7 +18,7 @@
     <br>
     <fieldset class='text'>
         <label for='factor'>Enter the Factor of Differences:
-            <input type='text' name='factor' id='factor' value='{{ $factor or '' }}'>
+            <input type='text' name='factor' id='factor' value='{{ old('factor') }}'>
             </label> @if(count($errors) > 0)
         <ul>
             @foreach ($errors->get('factor') as $error)
@@ -30,7 +30,7 @@
     <br>
     <fieldset class='text'>
         <label for='terms'>Enter the Number of Terms:
-            <input type='text' name='terms' id='terms' value='{{ $terms or '' }}'>
+            <input type='text' name='terms' id='terms' value='{{ old('terms') }}'>
             </label> @if(count($errors) > 0)
         <ul>
             @foreach ($errors->get('terms') as $error)
