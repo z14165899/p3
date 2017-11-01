@@ -12,11 +12,11 @@ h1 {
 }
 
 h2{
-    margin: 5px 5px;
+    margin: 1em 3em;
     text-align: center;
     font-weight: bold;
     font-style: italic;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 li{
@@ -35,7 +35,10 @@ li{
 
 
 legend {
-    float: initial;
+    width:initial;
+    border: none;
+    padding:0em 1em;
+    margin-bottom: 0px;
 }
 
 .type {
