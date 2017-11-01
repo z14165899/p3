@@ -46,7 +46,6 @@ class FormController extends Controller
         }
 
         $message = 'The sum of this '.$type.' sequence with the first term of '.$firstTerm.', the different factor of '.$factor.' and the total term of '.$terms.' is '.$output;
-        $request->flash();
         
         return view('p3form.index')->with(['firstTerm'=>$firstTerm, 'factor'=>$factor, 'terms'=>$terms, 'type'=>$type, 'roundup'=>$roundup, 'message'=>$message]);
     }
